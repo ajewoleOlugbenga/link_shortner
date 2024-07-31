@@ -6,7 +6,7 @@ class Link(models.Model):
     name = models.CharField(max_length=50, unique=True)
     url = models.URLField(max_length=200)
     slug = models.SlugField(unique=True, blank=True)
-    clicks - models.PositiveIntegerField(default=0)
+    clicks = models.PositiveIntegerField(default=0)
     
     
     def __str__(self):
